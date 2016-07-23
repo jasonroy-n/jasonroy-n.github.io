@@ -1,0 +1,78 @@
+@import 'variables'
+footer
+	height: 100px
+	background: $orange
+	.footerLogo
+		background: $navy
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		float: left
+		margin-top: 20px
+		@media screen and (max-width: 830px)
+			margin-left: 15px
+		@media screen and (max-width: 570px)
+			width: 50px
+			height: 50px
+			margin-top: 25px
+		@media screen and (max-width: 480px)
+			width: 30px
+			height: 30px
+			margin-top: 35px
+		@media screen and (max-width: 390px)
+			width: 20px
+			height: 20px
+			margin-top: 40px
+	.footerLeft
+		float: left
+		margin: 28px 0 0 20px
+		@media screen and (max-width: 830px)
+			margin-left: 10px
+		.footerTitle
+			color: navy
+			font:
+				family: "Dosis", sans-serif
+				size: 1rem
+				weight: 500
+			margin:
+				top: 0
+				bottom: 0
+		.email
+			color: $navy
+			font:
+				family: "Dosis", sans-serif
+				size: 1.2rem
+				weight: 600
+			margin:
+				top: 0
+				bottom: 0
+			padding-bottom: 0
+	.footerRight
+		float: right
+		margin-top: 20px
+		@media screen and (max-width: 830px)
+			margin-right: 15px
+		@media screen and (max-width: 570px)
+			margin-top: 25px
+		@media screen and (max-width: 480px)
+			margin-top: 35px
+		@media screen and (max-width: 480px)
+			margin-top: 40px
+
+		.social
+			border-radius: 50%
+			width: 60px
+			height: 60px
+			background: $navy
+			margin-left: 15px
+			float: right
+			@media screen and (max-width: 570px)
+				width: 50px
+				height: 50px
+			@media screen and (max-width: 480px)
+				width: 30px
+				height: 30px
+			@media screen and (max-width: 390px)
+				width: 20px
+				height: 20px
+				margin-left: 5px
