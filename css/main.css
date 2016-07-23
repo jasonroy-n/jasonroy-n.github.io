@@ -480,22 +480,17 @@ footer {
         width: 30px;
         height: 30px;
         margin-top: 35px; } }
-    @media screen and (max-width: 390px) {
-      footer .footerLogo {
-        width: 20px;
-        height: 20px;
-        margin-top: 40px; } }
   footer .footerLeft {
     float: left;
-    margin: 28px 0 0 20px; }
+    margin: 40px 0 0 20px; }
     @media screen and (max-width: 830px) {
       footer .footerLeft {
         margin-left: 10px; } }
-    footer .footerLeft .footerTitle {
-      color: navy;
-      font-family: "Dosis", sans-serif;
-      font-size: 1rem;
-      font-weight: 500;
+    footer .footerLeft .copyright {
+      text-align: center;
+      color: #3C3E6A;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9rem;
       margin-top: 0;
       margin-bottom: 0; }
     footer .footerLeft .email {
@@ -538,6 +533,4 @@ footer {
           height: 30px; } }
       @media screen and (max-width: 390px) {
         footer .footerRight .social {
-          width: 20px;
-          height: 20px;
           margin-left: 5px; } }
