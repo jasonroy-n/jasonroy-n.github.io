@@ -1,11 +1,14 @@
 footer
 	.wrapper
-		.footerLogo
+		.footerLogo {% include footerLogo.html %}
 		.footerLeft
 			p.copyright &copy 2016 All Rights Reserved.
 		.footerRight
-			.social.dribbble
-			.social.instagram
-			.social.twitter
+			a(href="https://instagram.com/jasonroy_n/")
+				.social.instagram {% include instagram.html %}
+			a(href="https://twitter.com/jasonroy_n/")
+				.social.twitter {% include twitter.html %}
+			a(href="https://dribbble.com/jasonroy_n/")
+				.social.dribbble {% include dribbble.html %}
 			
 

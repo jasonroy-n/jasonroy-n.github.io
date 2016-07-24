@@ -1,24 +1,28 @@
 @import 'variables'
+@function tint($color, $percentage)
+	@return mix(white, $color, $percentage)
+
 footer
 	height: 100px
-	background: $orange
+	background-color: tint($navy, 20%)
 	.footerLogo
-		background: $navy
-		width: 60px
-		height: 60px
-		border-radius: 50%
+		width: 40px
+		height: 40px
 		float: left
-		margin-top: 20px
+		margin-top: 30px
+		svg
+			fill: rgba(255,255,255,0.5)
+			transition: all 0.3s ease
 		@media screen and (max-width: 830px)
 			margin-left: 15px
-		@media screen and (max-width: 570px)
-			width: 50px
-			height: 50px
-			margin-top: 25px
 		@media screen and (max-width: 480px)
 			width: 30px
 			height: 30px
 			margin-top: 35px
+		&:hover
+			cursor: pointer
+			svg
+				fill: $orange
 	.footerLeft
 		float: left
 		margin: 40px 0 0 20px
@@ -26,47 +30,59 @@ footer
 			margin-left: 10px
 		.copyright
 			text-align: center
-			color: $navy
+			color: rgba(255,255,255,0.5)
 			font:
 				family: "Open Sans", sans-serif
-				size: 0.9rem
+				size: 1rem
+				weight: 400
 			margin:
 				top: 0
 				bottom: 0
-		.email
-			color: $navy
-			font:
-				family: "Dosis", sans-serif
-				size: 1.2rem
-				weight: 600
-			margin:
-				top: 0
-				bottom: 0
-			padding-bottom: 0
+			@media screen and (max-width: 570px)
+				font-size: 0.9rem
+			@media screen and (max-width: 480px)
+				font-size: 0.75rem
+			@media screen and (max-width: 330px)
+				font-size: 0.65rem
+
 	.footerRight
 		float: right
-		margin-top: 20px
+		margin-top: 30px
 		@media screen and (max-width: 830px)
 			margin-right: 15px
 		@media screen and (max-width: 570px)
 			margin-top: 25px
 		@media screen and (max-width: 480px)
 			margin-top: 35px
-		@media screen and (max-width: 480px)
-			margin-top: 40px
 
 		.social
-			border-radius: 50%
-			width: 60px
-			height: 60px
-			background: $navy
+			width: 40px
+			height: 40px
 			margin-left: 15px
 			float: right
-			@media screen and (max-width: 570px)
-				width: 50px
-				height: 50px
+			svg
+			fill: rgba(255,255,255,0.5)
 			@media screen and (max-width: 480px)
 				width: 30px
 				height: 30px
 			@media screen and (max-width: 390px)
 				margin-left: 5px
+		.dribbble
+			svg
+				transition: all 0.3s ease
+			&:hover
+				svg
+					fill: $orange
+		.instagram
+			svg
+				transition: all 0.3s ease
+			&:hover
+				svg
+					fill: $orange
+		.twitter
+			svg
+				transition: all 0.3s ease
+			&:hover
+				svg
+					fill: $orange
+			

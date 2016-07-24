@@ -386,21 +386,43 @@ textarea {
         font-size: 3rem; } }
     .wrapper h1 span {
       color: #FDA871; }
-  .wrapper .logo {
+  .wrapper .logoCircle {
+    background: #3C3E6A;
     margin-top: 50px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: #FDA871;
-    float: right; }
+    float: right;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
     @media screen and (max-width: 830px) {
-      .wrapper .logo {
+      .wrapper .logoCircle {
         margin-right: 20px; } }
     @media screen and (max-width: 480px) {
-      .wrapper .logo {
+      .wrapper .logoCircle {
         float: none;
-        display: block;
-        margin: 30px auto 0 auto; } }
+        margin: 30px auto 0 auto;
+        width: 80px;
+        height: 80px; } }
+    .wrapper .logoCircle .logo {
+      padding-top: 5px;
+      width: 80px;
+      height: 80px;
+      transition: -webkit-transform 0.3s ease;
+      transition: transform 0.3s ease; }
+      @media screen and (max-width: 480px) {
+        .wrapper .logoCircle .logo {
+          width: 60px;
+          height: 60px; } }
+      .wrapper .logoCircle .logo svg {
+        fill: white; }
+      .wrapper .logoCircle .logo:hover {
+        -webkit-transform: scale(1.1, 1.1);
+                transform: scale(1.1, 1.1); }
 
 .work {
   background: #3C3E6A;
@@ -459,27 +481,27 @@ textarea {
 
 footer {
   height: 100px;
-  background: #FDA871; }
+  background-color: #636588; }
   footer .footerLogo {
-    background: #3C3E6A;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     float: left;
-    margin-top: 20px; }
+    margin-top: 30px; }
+    footer .footerLogo svg {
+      fill: rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease; }
     @media screen and (max-width: 830px) {
       footer .footerLogo {
         margin-left: 15px; } }
-    @media screen and (max-width: 570px) {
-      footer .footerLogo {
-        width: 50px;
-        height: 50px;
-        margin-top: 25px; } }
     @media screen and (max-width: 480px) {
       footer .footerLogo {
         width: 30px;
         height: 30px;
         margin-top: 35px; } }
+    footer .footerLogo:hover {
+      cursor: pointer; }
+      footer .footerLogo:hover svg {
+        fill: #FDA871; }
   footer .footerLeft {
     float: left;
     margin: 40px 0 0 20px; }
@@ -488,22 +510,24 @@ footer {
         margin-left: 10px; } }
     footer .footerLeft .copyright {
       text-align: center;
-      color: #3C3E6A;
+      color: rgba(255, 255, 255, 0.5);
       font-family: "Open Sans", sans-serif;
-      font-size: 0.9rem;
+      font-size: 1rem;
+      font-weight: 400;
       margin-top: 0;
       margin-bottom: 0; }
-    footer .footerLeft .email {
-      color: #3C3E6A;
-      font-family: "Dosis", sans-serif;
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-bottom: 0; }
+      @media screen and (max-width: 570px) {
+        footer .footerLeft .copyright {
+          font-size: 0.9rem; } }
+      @media screen and (max-width: 480px) {
+        footer .footerLeft .copyright {
+          font-size: 0.75rem; } }
+      @media screen and (max-width: 330px) {
+        footer .footerLeft .copyright {
+          font-size: 0.65rem; } }
   footer .footerRight {
     float: right;
-    margin-top: 20px; }
+    margin-top: 30px; }
     @media screen and (max-width: 830px) {
       footer .footerRight {
         margin-right: 15px; } }
@@ -513,20 +537,12 @@ footer {
     @media screen and (max-width: 480px) {
       footer .footerRight {
         margin-top: 35px; } }
-    @media screen and (max-width: 480px) {
-      footer .footerRight {
-        margin-top: 40px; } }
     footer .footerRight .social {
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      background: #3C3E6A;
+      width: 40px;
+      height: 40px;
       margin-left: 15px;
-      float: right; }
-      @media screen and (max-width: 570px) {
-        footer .footerRight .social {
-          width: 50px;
-          height: 50px; } }
+      float: right;
+      fill: rgba(255, 255, 255, 0.5); }
       @media screen and (max-width: 480px) {
         footer .footerRight .social {
           width: 30px;
@@ -534,3 +550,15 @@ footer {
       @media screen and (max-width: 390px) {
         footer .footerRight .social {
           margin-left: 5px; } }
+    footer .footerRight .dribbble svg {
+      transition: all 0.3s ease; }
+    footer .footerRight .dribbble:hover svg {
+      fill: #FDA871; }
+    footer .footerRight .instagram svg {
+      transition: all 0.3s ease; }
+    footer .footerRight .instagram:hover svg {
+      fill: #FDA871; }
+    footer .footerRight .twitter svg {
+      transition: all 0.3s ease; }
+    footer .footerRight .twitter:hover svg {
+      fill: #FDA871; }
