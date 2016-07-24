@@ -3,6 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("variables");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -367,7 +368,7 @@ textarea {
 .wrapper {
   max-width: 800px;
   margin: 0 auto; }
-  .wrapper h1 {
+  .wrapper .headerTitle {
     margin-top: 30px;
     color: #3C3E6A;
     font-family: "Dosis", sans-serif;
@@ -375,16 +376,16 @@ textarea {
     font-weight: 600;
     float: left; }
     @media screen and (max-width: 830px) {
-      .wrapper h1 {
+      .wrapper .headerTitle {
         margin-left: 15px; } }
     @media screen and (max-width: 480px) {
-      .wrapper h1 {
+      .wrapper .headerTitle {
         float: none;
         display: block;
         text-align: center;
         margin-top: 30px;
         font-size: 3rem; } }
-    .wrapper h1 span {
+    .wrapper .headerTitle span {
       color: #FDA871; }
   .wrapper .logoCircle {
     background: #3C3E6A;
@@ -482,6 +483,9 @@ textarea {
 footer {
   height: 100px;
   background-color: #636588; }
+  @media screen and (max-width: 480px) {
+    footer {
+      height: 60px; } }
   footer .footerLogo {
     width: 40px;
     height: 40px;
@@ -497,7 +501,7 @@ footer {
       footer .footerLogo {
         width: 30px;
         height: 30px;
-        margin-top: 35px; } }
+        margin-top: 15px; } }
     footer .footerLogo:hover {
       cursor: pointer; }
       footer .footerLogo:hover svg {
@@ -508,6 +512,9 @@ footer {
     @media screen and (max-width: 830px) {
       footer .footerLeft {
         margin-left: 10px; } }
+    @media screen and (max-width: 480px) {
+      footer .footerLeft {
+        margin-top: 23px; } }
     footer .footerLeft .copyright {
       text-align: center;
       color: rgba(255, 255, 255, 0.5);
@@ -536,7 +543,7 @@ footer {
         margin-top: 25px; } }
     @media screen and (max-width: 480px) {
       footer .footerRight {
-        margin-top: 35px; } }
+        margin-top: 15px; } }
     footer .footerRight .social {
       width: 40px;
       height: 40px;
@@ -562,3 +569,19 @@ footer {
       transition: all 0.3s ease; }
     footer .footerRight .twitter:hover svg {
       fill: #FDA871; }
+
+.contact {
+  background: white; }
+  .contact .email {
+    color: #3C3E6A;
+    font-family: "Dosis", sans-serif;
+    font-size: 4rem;
+    text-align: center; }
+    .contact .email span {
+      color: #FDA871; }
+    @media screen and (max-width: 619px) {
+      .contact .email {
+        font-size: 3rem; } }
+    @media screen and (max-width: 469px) {
+      .contact .email {
+        font-size: 2rem; } }

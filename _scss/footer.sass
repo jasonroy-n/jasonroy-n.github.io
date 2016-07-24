@@ -5,6 +5,8 @@
 footer
 	height: 100px
 	background-color: tint($navy, 20%)
+	@media screen and (max-width: 480px)
+		height: 60px
 	.footerLogo
 		width: 40px
 		height: 40px
@@ -18,7 +20,7 @@ footer
 		@media screen and (max-width: 480px)
 			width: 30px
 			height: 30px
-			margin-top: 35px
+			margin-top: 15px
 		&:hover
 			cursor: pointer
 			svg
@@ -28,6 +30,8 @@ footer
 		margin: 40px 0 0 20px
 		@media screen and (max-width: 830px)
 			margin-left: 10px
+		@media screen and (max-width: 480px)
+			margin-top: 23px
 		.copyright
 			text-align: center
 			color: rgba(255,255,255,0.5)
@@ -53,7 +57,7 @@ footer
 		@media screen and (max-width: 570px)
 			margin-top: 25px
 		@media screen and (max-width: 480px)
-			margin-top: 35px
+			margin-top: 15px
 
 		.social
 			width: 40px
