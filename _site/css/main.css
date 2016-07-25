@@ -478,16 +478,48 @@ textarea {
         width: 400px; } }
     .posts .group .img {
       width: 100%;
-      height: 330px;
-      background: url("../images/cardFullPattern.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center; }
+      height: 330px; }
     .posts .group .caption {
       font-family: "Open Sans", sans-serif;
       font-size: 1rem;
       color: #3C3E6A;
       margin: 10px 10px auto 10px; }
+
+#motivationImg {
+  background: url("../images/motivation.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#schoolImg {
+  background: url("../images/school.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#urbanImg {
+  background: url("../images/urban.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#landingImg {
+  background: url("../images/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#responsiveImg {
+  background: url("../images/responsive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#cardsImg {
+  background: url("../images/cards.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
 
 #viewMore {
   cursor: pointer;
