@@ -461,7 +461,7 @@ textarea {
   max-width: 1000px;
   list-style: none;
   margin: 40px auto 0 auto;
-  padding: 0 0 50px 0;
+  padding: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -489,6 +489,17 @@ textarea {
       font-size: 1rem;
       color: #3C3E6A;
       margin: 10px 10px auto 10px; }
+
+#viewMore {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.4); }
+
+.hidden {
+  display: none; }
 
 footer {
   height: 100px;
