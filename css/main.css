@@ -490,8 +490,9 @@ textarea {
       margin: 10px 10px auto 10px; }
 
 #viewMore {
-  text-align: center;
+  cursor: pointer;
   padding-bottom: 30px;
+  text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;

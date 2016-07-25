@@ -31,7 +31,7 @@
 </g>
 </svg>
 </div></div><h1 class="headerTitle">I'm <span>Jason.</span><br/>Designer.<br/>Coder.</h1></div>
-		<section class="work"><div class="workTitleWrapper"><h2 class="workTitle">Meticulously crafted designs.</h2></div><ol id="myList" class="posts"><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li></ol><h2 id="viewMore" class="hidden">View More</h2></section>
+		<section class="work"><div class="workTitleWrapper"><h2 class="workTitle">Meticulously crafted designs.</h2></div><ol id="myList" class="posts"><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li><li class="group next"><div class="img"></div><p class="caption">Lorem ipsum dolor sit amet, consect adipisicing elit.</p></li></ol><h1 id="viewMore" class="hidden">View More</h1></section>
 		<section class="contact"><div class="wrapper"><h1 class="email"> <span>jasonroy.n</span>@gmail.com</h1></div></section>
 		<footer><div class="wrapper"><div class="footerLogo"><svg viewBox="206 -206 512 512">
 <g>
@@ -55,14 +55,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script>
 			var windowWidth = $(window).width();
-			if ( windowWidth < 659 ) {
-		    $('#viewMore').removeClass("hidden");
-		    $('.next').hide();
-		    $('#viewMore').click(function(){
-			    $('.next').slideToggle();
-			    $('#viewMore').html($('#viewMore').text() == 'View Less' ? 'View More' : 'View Less');
-		    });
-			}
+				if ( windowWidth < 659 ) {
+					$('.next').addClass("hidden")
+			    $('#viewMore').removeClass("hidden");
+			    $('#viewMore').click(function(e){
+			    	if ($('.next').hasClass("hidden")) {
+					    $('.next').removeClass("hidden");
+					    $('#viewMore').html("View Less");
+					   } else {
+					   	$('.next').addClass("hidden");
+					   	$('#viewMore').html("View More");
+					   }
+				  });
+				}
 		</script>
 	</body>
 </html>
